@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: #f39c12;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+nav a{
+    color: white;
+    font-style: none;
+}
+.sidebar {
+    background-color: #ecf0f1;
+    padding: 15px;
+}
+.main-content{
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+}
+.extra-info{
+    background-color: #8e44ad;
+    color: white;
+    padding: 15px;
+}
+.services{
+    background-color: #27ae60;
+    padding: 10px;
+}
+.service-items{
+    background-color: #2ecc71;
+}
+.service-item{
+    padding: 10px;
+}
+.testimonials{
+    background-color: #f39c12;
+    padding: 10px;
+}
+.testimonial-item{
+    background-color: #f1c40f;
+    padding: 10px;
+}
+.call-to-action{
+    background-color: #3498db;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.cta-button{
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li{
+    list-style-type: none;
+}
+
+@media (max-width: 600px) {
+    section{
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .testimonial-item .services{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        margin: 20px 30px;
+    }
+    .sidebar{
+        margin-bottom: 20px;
+    } 
+    .services{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .service-items{
+        margin: 15px;
+    }
+    .service-item{
+        margin-top: 5px;
+    }
+    .testimonial-items{
+        margin: 10px;
+    }   
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+   main{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 30px;
+    }
+    .sidebar{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/*@media (min-width: 1024px){
+    .sidebar .main-content .extra-info {
+        display: flex;
+        flex-direction: row;
+    }
+   
+}*/
+
